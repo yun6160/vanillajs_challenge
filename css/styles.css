@@ -1,3 +1,105 @@
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
 .hidden {
   display: none;
+}
+
+input {
+  width: 500px;
+  height: 32px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 15px;
+  outline: none;
+  padding-left: 10px;
+  background-color: whitesmoke;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+::marker {
+  content: "»";
+  --hue: 0;
+}
+
+li {
+  padding-inline-start: 1ch;
+}
+
+img {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  opacity: 70%;
+}
+
+button {
+  background-color: transparent;
+  border-radius: 100px;
+  border-color: white;
+  border-style: dashed;
+  float: right;
+  margin-left: 10px;
+}
+
+#greeting {
+  margin-top: 10%;
+  font-size: 80px;
+  display: grid;
+  place-items: center;
+  text-decoration: underline 5px solid whitesmoke;
+  text-underline-offset: 15px;
+  z-index: 2;
+  color: whitesmoke;
+}
+
+#clock {
+  margin-top: -2%;
+  font-size: 80px;
+  display: grid;
+  place-items: center;
+  z-index: 2;
+  color: whitesmoke;
+}
+
+#weather {
+  margin-top: -4%;
+  font-size: 25px;
+  display: grid;
+  place-items: center;
+  z-index: 2;
+  color: whitesmoke;
+}
+
+#quote {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 15px;
+  display: grid;
+  z-index: 2;
+  color: whitesmoke;
+}
+
+#todo-form {
+  margin-top: 1%;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+}
+
+ul#todo-list {
+  color: whitesmoke;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
 }

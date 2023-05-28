@@ -18,7 +18,7 @@ function onLogin(event) {
 }
 
 function paintGreeting(username) {
-  greeting.innerText = `Hello ${username}`; //`${변수}` string안에 넣을 때 백틱
+  greeting.innerText = `Hello, ${username}`; //`${변수}` string안에 넣을 때 백틱
   greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
